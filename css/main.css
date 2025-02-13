@@ -171,6 +171,10 @@ header {
                 font-size: 12px;
                 color: #999;
                 cursor: pointer;
+
+                &:hover {
+                    color: var(--starbucks-color);
+                }
               }
             }
           }
