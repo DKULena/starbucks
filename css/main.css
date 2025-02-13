@@ -1,4 +1,8 @@
 /* COMMON */
+:root {
+  --starbucks-color: #669900;
+}
+
 body {
   color: #333;
   font-size: 16px;
@@ -13,9 +17,9 @@ a {
   text-decoration: none;
 }
 .inner {
-    width: 1100px;
-    margin: 0 auto;
-    position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* HEADER */
@@ -94,7 +98,7 @@ header {
 
           &:focus {
             width: 190px;
-            border-color: #669900;
+            border-color: var(--starbucks-color);
           }
         }
 
@@ -138,7 +142,7 @@ header {
       &:hover {
         .item__name {
           background: #2c2a29;
-          color: #669900;
+          color: var(--starbucks-color);
           border-radius: 6px 6px 0 0;
         }
       }
@@ -150,12 +154,40 @@ header {
         display: none;
 
         .contents__menu {
-          background: red;
-          height: 200px;
+          background: #2c2a29;
+
+          & > ul {
+            display: flex;
+            padding: 20px 0;
+            & > li {
+              width: 220px;
+              h4 {
+                padding: 3px 0 12px 0;
+                font-size: 14px;
+                color: #fff;
+              }
+              ul li {
+                padding: 5px 0;
+                font-size: 12px;
+                color: #999;
+                cursor: pointer;
+              }
+            }
+          }
         }
         .contents__texture {
-          background: orange;
-          height: 100px;
+          padding: 26px 0;
+          font-size: 12px;
+          background-image: url('../images/main_menu_pattern.jpg');
+
+          h4 {
+            color: #999;
+            font-weight: 700;
+          }
+          p {
+            color: var(--starbucks-color);
+            margin: 4px 0 14px;
+          }
         }
       }
     }
