@@ -88,4 +88,22 @@
       }
     }
   }
+
+  .promotion {
+    position: relative;
+    height: 693px;
+    background-color: #f6f5ef;
+
+    .swiper {
+      width: calc(819px * 3 + 20px);
+      height: 553px;
+      background-color: orange;
+      text-align: center;
+      font-size: 200px;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      margin-left: calc((819px * 3 + 20px) / -2);
+    }
+  }
 }
