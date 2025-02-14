@@ -12,7 +12,7 @@
       property="og:description"
       content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다."
     />
-    <meta property="og:image" content="./images/starbucks_seo.jpg" />
+    <meta property="og:image" content="./assets/starbucks_seo.jpg" />
     <meta property="og:url" content="./https://starbucks.co.kr" />
 
     <meta property="twitter:card" content="summary" />
@@ -22,46 +22,58 @@
       property="twitter:description"
       content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다."
     />
-    <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+    <meta property="twitter:image" content="./assets/starbucks_seo.jpg" />
     <meta property="twitter:url" content="https://starbucks.co.kr" />
 
     <link rel="icon" href="./favicon.png" />
+    <!-- RESETCSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- MATERIAL ICONS -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="./css/main.css" />
 
+    <!-- GSAP -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- LODASH -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
       integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script defer src="/js/main.js"></script>
+    <!-- SWIPER -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <!-- HEADER -->
     <header>
       <div class="inner">
         <a href="/" class="logo">
-          <img src="./images/starbucks_logo.png" alt="스타벅스 로고" />
+          <img src="./assets/starbucks_logo.png" alt="스타벅스 로고" />
         </a>
 
         <div class="sub-menu">
@@ -383,10 +395,10 @@
 
       <div class="badges">
         <div class="badge">
-          <img src="./images/badge1.jpg" alt="Badge" />
+          <img src="./assets/badge1.jpg" alt="Badge" />
         </div>
         <div class="badge">
-          <img src="./images/badge2.jpg" alt="Badge2" />
+          <img src="./assets/badge2.jpg" alt="Badge2" />
         </div>
       </div>
     </header>
@@ -397,7 +409,7 @@
         <div class="title">
           <div id="image1" class="fade-in">
             <img
-              src="./images/visual_title.png"
+              src="./assets/visual_title.png"
               alt="STARBUCKS DELIGHTFUL START TO THE YAERS"
             />
             <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
@@ -405,30 +417,30 @@
         </div>
         <div id="image1" class="fade-in">
           <img
-            src="./images/visual_cup1.png"
+            src="./assets/visual_cup1.png"
             alt="new OATMEAL LATTE"
             class="cup1 image"
           />
           <img
-            src="./images/visual_cup1_text.png"
+            src="./assets/visual_cup1_text.png"
             alt="오트밀 라떼"
             class="cup1 text"
           />
         </div>
         <div id="image2" class="fade-in">
           <img
-            src="./images/visual_cup2.png"
+            src="./assets/visual_cup2.png"
             alt="new CARAMEL CRUMBLE MOCHA"
             class="cup2 image"
           />
           <img
-            src="./images/visual_cup2_text.png"
+            src="./assets/visual_cup2_text.png"
             alt="스타벅스 카라멜 크럼블 모카"
             class="cup2 text"
           />
         </div>
         <div id="spoon" class="fade-in">
-          <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+          <img src="./assets/visual_spoon.png" alt="Spoon" class="spoon" />
         </div>
       </div>
     </section>
@@ -441,7 +453,30 @@
         <div class="inner">
           <div class="inner__left">
             <h2>공지사항</h2>
-            <div class="swiper-container"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >[당첨자 발표] 2025 스타벅스 플래너 영수증 이벤트</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >[당첨자 발표] 뉴이어 전자영수증 이벤트</a
+                  >
+                </div>
+              </div>
+            </div>
             <a href="javascript:void(0)" class="notice-line__more">
               <div class="material-icons">add_circle</div>
             </a>

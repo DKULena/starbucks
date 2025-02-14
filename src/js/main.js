@@ -46,3 +46,11 @@ fadeEls.forEach((fadeEl, index) => {
         opacity: 1,
     })
 })
+
+//  swiper
+// new Swiper(선택자, 옵션)
+new Swiper('.notice-line .swiper', {
+    direction: "vertical",
+    autoplay: true,
+    loop: true
+});

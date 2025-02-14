@@ -1,7 +1,7 @@
 /* BANNER */
 .banner {
     padding-top: 120px;
-    background-image: url(../images/visual_bg.jpg);
+    background-image: url(../assets/visual_bg.jpg);
     background-position: center;
     
     .inner {

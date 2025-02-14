@@ -36,17 +36,26 @@
           margin-right: 20px;
         }
 
-        .swiper-container {
-          background-color: orange;
+        .swiper {
           height: 62px;
           flex-grow: 1;
-        }
-        .notice-line__more {
-            width: 62px;
+          overflow: hidden;
+
+          .swiper-slide {
             height: 62px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        .notice-line__more {
+          width: 62px;
+          height: 62px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .material-icons {
             color: #fff;
             font-size: 30px;
@@ -61,20 +70,20 @@
         align-items: center;
 
         h2 {
-font-size: 17px;
-font-weight: 700;
+          font-size: 17px;
+          font-weight: 700;
         }
 
         .toggle-promotion {
-            width: 62px;
-            height: 62px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .material-icons {
-                font-size: 30px;
-            }
+          width: 62px;
+          height: 62px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .material-icons {
+            font-size: 30px;
+          }
         }
       }
     }
