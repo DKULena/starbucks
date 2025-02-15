@@ -93,6 +93,8 @@
     position: relative;
     height: 693px;
     background-color: #f6f5ef;
+    transition: height .4s;
+    overflow: hidden;
 
     .swiper {
       width: calc(819px * 3 + 20px);
@@ -185,6 +187,10 @@
     .swiper-next {
       right: 50%;
       margin-right: -480px;
+    }
+
+    &.hide {
+      height: 0;
     }
 
   }
