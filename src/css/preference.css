@@ -1,0 +1,19 @@
+.pick-your-favorite {
+background-image: url(../assets/favorite_bg.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed; /*뷰포트에 고정*/
+background-size: cover;
+    .inner {
+        padding: 110px 0;
+
+        .text-group {
+            width: 362px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 40px;
+            margin-left: 100px;
+        }
+    }
+}
