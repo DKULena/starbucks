@@ -163,7 +163,7 @@ header {
           .contents__texture {
             padding: 26px 0;
             font-size: 12px;
-            background-image: url("../images/main_menu_pattern.jpg");
+            background-image: url("../assets/main_menu_pattern.jpg");
   
             h4 {
               color: #999;
