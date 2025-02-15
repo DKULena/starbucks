@@ -79,7 +79,33 @@ let promotionEl = document.querySelector(".promotion");
 const promotionToggleBtn = document.querySelector(".toggle-promotion");
 let isHidePromotion = false;
 promotionToggleBtn.addEventListener("click", () => {
-  isHidePromotion ? promotionEl.classList.add('hide') : promotionEl.classList.remove('hide');
+  isHidePromotion
+    ? promotionEl.classList.add("hide")
+    : promotionEl.classList.remove("hide");
   isHidePromotion = !isHidePromotion;
   console.log(isHidePromotion);
 });
+
+const random = (min, max) => {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+}
+
+// 플로팅 아이콘
+const floatingObject = (selector, delay, size) => {
+  // gsap.to(요소, 지속시간, 옵션(객체));
+  // esaing
+  gsap.to(
+    selector, // 선택자
+    random(1.5, 2.5), // 애니메이션 동작 시간
+    { // 옵션
+      y: size,
+      repeat: -1, // -1 to repeat infinite
+      yoyo: true, // 반복
+      ease: "power1.inOut",
+      delay: random(0, delay),
+    });
+};
+
+floatingObject('.floating1', 1, 15);
+floatingObject('.floating2', .5, 15);
+floatingObject('.floating3', 1.5, 20);
