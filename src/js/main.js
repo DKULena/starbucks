@@ -17,6 +17,7 @@ searchInputEl.addEventListener("blur", () => {
 
 const badgeEl = document.querySelector("header .badges");
 
+// LODASH -> 
 window.addEventListener(
   "scroll",
   _.throttle(() => {
@@ -37,7 +38,7 @@ window.addEventListener(
     }
   }, 300)
 );
-// _.throttle(함수, 시간)
+// _.throttle(함수, [시간], [옵션])
 
 const fadeEls = document.querySelectorAll(".banner .fade-in");
 
@@ -74,6 +75,17 @@ new Swiper(".promotion .swiper", {
     nextEl: ".promotion .swiper-next",
   },
 });
+
+new Swiper(".awards .swiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  autoplay: true,
+  loop: true,
+  navigation: {
+    prevEl: ".awards .swiper-prev",
+    nextEl: ".awards .swiper-next"
+  }
+})
 
 let promotionEl = document.querySelector(".promotion");
 const promotionToggleBtn = document.querySelector(".toggle-promotion");
