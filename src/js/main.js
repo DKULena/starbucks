@@ -16,12 +16,14 @@ searchInputEl.addEventListener("blur", () => {
 });
 
 const badgeEl = document.querySelector("header .badges");
+const toTopEl = document.querySelector('#to-top');
 
-// LODASH -> 
+
+// LODASH 
 window.addEventListener(
   "scroll",
   _.throttle(() => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY > 500) {
       // 배지 숨기기
       // gsap.to(요소, 지속시간, 옵션);
@@ -29,16 +31,30 @@ window.addEventListener(
         opacity: 0,
         display: "none",
       });
+      // 버튼 보이기
+      gsap.to(toTopEl, .2, {
+        x: 0,
+      })
     } else {
       // 배지 보이기
       gsap.to(badgeEl, 0.6, {
         opacity: 1,
         display: "block",
       });
+      // 버튼 숨기기
+      gsap.to(toTopEl, .2, {
+        x: 100,
+      });
     }
   }, 300)
 );
 // _.throttle(함수, [시간], [옵션])
+
+toTopEl.addEventListener("click", () => {
+  gsap.to(window, .7, {
+    scrollTo: 0,
+  })
+})
 
 const fadeEls = document.querySelectorAll(".banner .fade-in");
 
