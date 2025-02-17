@@ -1,7 +1,7 @@
 @import url('common.css');
 @import url('header.css');
 @import url('signin.css');
-/* @import url('banner.css');
+@import url('banner.css');
 @import url('notification.css');
 @import url('rewards.css');
 @import url('youtube.css');
@@ -10,5 +10,5 @@
 @import url('reserveStore.css');
 @import url('preference.css');
 @import url('findStore.css');
-@import url('awards.css'); */
+@import url('awards.css');
 @import url('footer.css');
